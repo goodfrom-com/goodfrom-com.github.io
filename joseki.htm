@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kogo's Joseki, Jeongseok, Di`ngshi` Dictionary</title>
+<script type="text/javascript" src="wgo/wgo.min.js"></script>
+<script type="text/javascript" src="wgo/wgo.player.min.js"></script>
+<link rel="stylesheet" type="text/css" href="wgo/wgo.player.css" />
+</head>
+<body>
+<script type="text/javascript">
+        var b_iframe = window.parent.parent.document.getElementById("Iframe");
+        var hash_url = window.location.hash;
+        if(hash_url.indexOf("#")>=0){
+        var hash_width = hash_url.split("#")[1].split("|")[0]+"px";
+        var hash_height = hash_url.split("#")[1].split("|")[1]+"px";
+        b_iframe.style.width = hash_width;
+        b_iframe.style.height = hash_height;
+    }
+</script>
+<div data-wgo="joseki-kogo.sgf">
+Kogo's Joseki, Jeongseok, Di`ngshi` Dictionary<a href="joseki-kogo.sgf">download SGF</a>。
+    </div>
+</body>
+</html>
